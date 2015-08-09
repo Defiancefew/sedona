@@ -1,0 +1,278 @@
+.wrapper
+	max-width: 1200px
+	margin: 0 auto
+	box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75)
+
+.header
+	&__topline
+		height: 56px
+		padding: 0 73px
+		background-color: white
+		position: relative
+		+cf
+		a
+			text-decoration: none
+			color: #000
+			font-family: "PT_Sans-Bold"
+			font-size: 14px
+			text-transform: uppercase
+			line-height: 56px
+		li
+			display: inline-block
+			margin-right: 144px
+			&:last-child
+				margin-right: 0
+	&__nav-left
+		float: left
+
+	&__nav-right
+		float: right
+	&__logo
+		+vca
+		top: 0
+		z-index: 3
+	&__logo-wrap
+		+size(115px)
+		background-color: #81B3D2
+		border-radius: 18px
+		transform: rotate(45deg)
+		margin: 0 auto
+		position: relative
+		top: -65px
+		z-index: 2
+	&__main
+		background-image: url(../img/main_pic.png)
+		min-height: 725px
+		background-position: 0 -80px
+		background-repeat: no-repeat
+		position: relative
+		padding-top: 75px
+		img
+			display: block
+			margin: 0 auto
+			&:nth-child(1)
+				margin-bottom: 13px
+			&:nth-child(2)
+				margin-bottom: 51px
+			&:nth-child(3)
+				margin-bottom: 54px
+		&-heading
+			text-align: center
+			font-size: 21px
+			text-transform: uppercase
+			font-family: "PT_Sans-Regular"
+			margin-top: 140px
+		&-subheading
+			text-align: center
+			font-size: 14px
+			color: #333
+			font-family: "PT_Sans-Regular"
+			margin-top: 25px
+			text-transform: uppercase
+.teaser
+	+cf
+	width: 100%
+	min-height: 260px
+	text-align: center
+	&__name
+		color: white
+		font-family: "PT_Sans-Regular"
+		text-transform: uppercase
+		font-size: 21px
+	&__reason
+		font-family: "PT_Sans-Regular"
+		text-transform: uppercase
+		font-size: 14px
+		color: white
+	&__reason-number
+		color: white
+	&__city-left
+		width: 33.333333%
+		background-color: #81B3D2
+		float: left
+		height: 256px
+	&__city-right
+		width: 66.66666%
+		float: right
+	&__name
+		margin-top: 50px
+		margin-bottom: 5px
+	&__reason
+		margin-top: 22px
+	&__tiles
+		+cf
+		margin-bottom: 80px
+	@each $s in house,food,gift
+		&__icon-#{$s}
+			@extend .icon-#{$s}
+			display: inline-block
+			text-align: center
+	&__tile
+		width: 33.33333%
+		float: left
+		padding: 54px 65px 0 65px
+	&__tile-heading
+		text-align: center
+		font-size: 21px
+		text-transform: uppercase
+		font-family: "PT_Sans-Regular"
+		color: black
+		margin-top: 23px
+	&__tile-text
+		text-align: center
+		font-size: 14px
+		text-transform: uppercase
+		font-family: "PT_Sans-Regular"
+		color: #7d7d7d
+		margin-top: 20px
+	&__bridge-right
+		float: right
+		height: 257px
+		width: 33.333333%
+		background-color: #81B3D2
+	&__bridge-left
+		width: 66.666666%
+		float: left
+		height: 257px
+	&__feature-tile
+		min-height: 257px
+		background-color: #EEEEEE
+		width: 33.333333%
+		float: left
+		color: #000
+		padding-top: 15px
+		.teaser__reason-number
+			color: black
+			margin-top: 10px
+		.teaser__tile-text
+			margin-top: 22px
+.join
+	min-height: 885px
+	background-image: url(../img/map.jpg)
+	background-position: bottom center
+	background-repeat: no-repeat
+	background-color: white
+	position: relative
+	padding-top: 35px
+	&__heading
+		font-family: "PT_Sans-Bold"
+		text-transform: uppercase
+		color: #000
+		font-size: 30px
+		text-align: center
+		margin-top: 10px
+	&__subtext
+		color: #333
+		font-size: 14px
+		font-family: "PT_Sans-Regular"
+		text-align: center
+		text-transform: uppercase
+		margin-top: 26px
+	&__form
+		max-width: 570px
+		margin: 0 auto
+	&__form-header
+		height: 88px
+		background-color: #766357
+	&__form-heading
+		color: #FFF
+		font-family: "PT_Sans-Regular"
+		text-align: center
+		line-height: 88px
+		margin-top: 48px
+		font-size: 21px
+		text-transform: uppercase
+	form
+		padding: 55px 60px
+		box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+		background-color: #fff
+		input
+			width: 338px
+			height: 40px
+			margin-bottom: 30px
+			display: inline-block
+			background-color: #F2F2F2
+			font-family: "PT_Sans-Bold"
+			font-size: 14px
+			text-transform: uppercase
+			text-indent: 10px
+			&#date_second
+				width: 335px
+				position: relative
+				left: -2px
+			&#adults
+				width: 115px
+				margin-left: 18px
+				margin-right: 40px
+			&#kids
+				width: 115px
+				position: relative
+		label
+			color: #000
+			font-family: "PT_Sans-Bold"
+			font-size: 14px
+			text-transform: uppercase
+			margin-right: 20px
+			display: inline-block
+		button
+			display: block
+			width: 100%
+			background-color: #81b3d2
+			height: 58px
+			line-height: 58px
+			color: #FFF
+			font-family: "PT_Sans-Bold"
+			font-size: 21px
+			text-transform: uppercase
+		.division
+			display: inline-block
+			position: relative
+.footer
+	background-color: rgba(255,255,255,0.6)
+	height: 120px
+	width: 100%
+	position: absolute
+	bottom: 0
+	padding: 0 135px
+	&__link
+		margin-top: 10px
+		color: #000
+		font-family: "PT_Sans-Bold"
+		font-size: 21px
+		text-transform: uppercase
+		float: left
+		position: relative
+		top: 30px
+	&__social
+		+cf
+		+ca
+	&__icon
+		float: left
+		width: 46px
+		height: 48px
+		margin-right: 6px
+		background-color: #81B3D2
+		position: relative
+		&:last-child
+			margin-right: 0
+	@each $s in twitter,facebook,youtube
+		&__icon-#{$s}
+			display: inline-block
+			@extend .icon-#{$s}
+			+ca
+	&__logo_a
+		display: inline-block
+		vertical-align: middle
+		@extend .icon-logo_a
+	&__logo_html
+		display: inline-block
+		vertical-align: middle
+		@extend .icon-logo_html
+	&__design
+		color: #000
+		font-family: "PT_Sans-Regular"
+		font-size: 14px
+		text-transform: uppercase
+		float: right
+		+hca
+		right: 107px

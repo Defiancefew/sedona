@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"><!--[if lt IE 9]>
+    <script src="lib/html5shiv/es5-shim.min.js"></script>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/animate/animate.css">
+    <title>Sedona</title>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader_Inner"></div>
+    </div>
+    <div class="hidden"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__topline">
+          <nav class="header__nav-left">
+            <ul>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+            </ul>
+          </nav>
+          <nav class="header__nav-right">
+            <ul>
+              <li><a href="#">Карта штата</a></li>
+              <li><a href="#">Гостинциы</a></li>
+            </ul>
+          </nav>
+          <div class="header__logo-wrap"></div>
+          <div class="header__logo"><img src="img/logo.png" alt="logo"></div>
+        </div>
+        <div class="header__main"><img src="img/Welcome.png" alt="Welcome"><img src="img/gorgeus.png" alt="to the gorgeus"><img src="img/sedona.png" alt="Sedona"><img src="img/because.png" alt="Because grand canyon sucks!">
+          <h2 class="header__main-heading">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> зАСЛУЖИвающий большего!</h2>
+          <h3 class="header__main-subheading">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h3>
+        </div>
+      </header>
+    </div>
+    <div class="wrapper">
+      <section class="teaser">
+        <div class="teaser__city-left">
+          <h3 class="teaser__name">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
+          <p class="teaser__reason-number">— №1 —</p>
+          <p class="teaser__reason">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+        <div class="teaser__city-right"><img src="img/city.jpg" alt="The real city!"></div>
+        <div class="teaser__tiles">
+          <div class="teaser__tile"><i class="teaser__icon-house"></i>
+            <h3 class="teaser__tile-heading">Жилье</h3>
+            <p class="teaser__tile-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="teaser__tile"><i class="teaser__icon-food"></i>
+            <h3 class="teaser__tile-heading">Еда</h3>
+            <p class="teaser__tile-text">Всегда заказывай ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </div>
+          <div class="teaser__tile"><i class="teaser__icon-gift"></i>
+            <h3 class="teaser__tile-heading">Сувениры</h3>
+            <p class="teaser__tile-text">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+        <div class="teaser__bridge-right">
+          <h3 class="teaser__name">ТАМ ЕСТЬ<br> Мост дьявола</h3>
+          <p class="teaser__reason-number">— №2 —</p>
+          <p class="teaser__reason">Да, по нему можно пройти!<br> Если конечно вы осмелитесь</p>
+        </div>
+        <div class="teaser__bridge-left"><img src="img/canyon.jpg" alt="Devil's bridge!"></div>
+        <div class="teaser__feature-tile">
+          <h3 class="teaser__tile-heading">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
+          <p class="teaser__reason-number">— №3 —</p>
+          <p class="teaser__tile-text">ВСЕ достопримеча-<br>тельности находятся очень близко</p>
+        </div>
+        <div class="teaser__feature-tile">
+          <h3 class="teaser__tile-heading">КРАСИВАЯ<br>ДОРОГА</h3>
+          <p class="teaser__reason-number">— №4 —</p>
+          <p class="teaser__tile-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br> НЕ СКУЧНО!</p>
+        </div>
+        <div class="teaser__feature-tile">
+          <h3 class="teaser__tile-heading">МАЛО<br>ТУРИСТОВ</h3>
+          <p class="teaser__reason-number">— №5 —</p>
+          <p class="teaser__tile-text">Большинство едет в гранд каньон и<br>толпится там</p>
+        </div>
+      </section>
+    </div>
+    <div class="wrapper">
+      <section class="join">
+        <h2 class="join__heading">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="join__subtext">Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="join__form">
+          <div class="join__form-header">
+            <h3 class="join__form-heading">Поиск гостиницы в седоне</h3>
+          </div>
+          <form>
+            <div class="division">
+              <label for="#date_first">Дата заезда:</label>
+              <input id="date_first" type="datetime" placeholder="24 Апреля 2014">
+            </div>
+            <div class="division">
+              <label for="#date_second">Дата Выезда:</label>
+              <input id="date_second" type="datetime" placeholder="4 июля 2014">
+            </div>
+            <div class="division">
+              <label for="#adults">ВзрослыЕ:</label>
+              <input id="adults" type="number" placeholder="2">
+            </div>
+            <div class="division">
+              <label for="#kids">ДетИ:</label>
+              <input id="kids" type="number" placeholder="4">
+            </div>
+            <button type="submit">Найти</button>
+          </form>
+        </div>
+        <div class="footer">
+          <div class="footer__visit">
+            <h2 class="footer__link">#visitSEDONA</h2>
+          </div>
+          <div class="footer__social">
+            <div class="footer__icon"><a href="#"><i class="footer__icon-twitter"></i></a></div>
+            <div class="footer__icon"><a href="#"><i class="footer__icon-facebook"></i></a></div>
+            <div class="footer__icon"><a href="#"><i class="footer__icon-youtube"></i></a></div>
+          </div>
+          <div class="footer__design">Website by <i class="footer__logo_a"></i> for <i class="footer__logo_html"></i></div>
+        </div>
+      </section>
+    </div>
+    <script src="lib/modernizr/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery/jquery-2.1.4.min.js"><\/script>');</script>
+    <script src="lib/TweenMax/TweenMax.min.js"></script>
+    <script src="lib/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+    <script src="lib/scrollmagic/debug.addIndicators.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

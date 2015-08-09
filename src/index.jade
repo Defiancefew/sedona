@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="description" content="")
+
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="img/favicon.png")
+		link(rel="apple-touch-icon" href="img/apple-touch-icon.png")
+		//- HTML 5 SHIV
+		<!--[if lt IE 9]>
+		script(src="lib/html5shiv/es5-shim.min.js")
+		script(src="lib/html5shiv/html5shiv.min.js")
+		script(src="lib/html5shiv/html5shiv-printshiv.min.js")
+		script(src="lib/respond/respond.min.js")
+		<![endif]-->
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="lib/animate/animate.css")
+		title Sedona
+
+		//- noscript
+		//- 	link(rel="stylesheet" href="css/style.css")
+		//- 	link(rel="stylesheet" href="lib/animate/animate.css")
+	body
+
+
+		.loader
+			.loader_Inner
+		.hidden
+		include includes/header.jade
+		include includes/teaser.jade
+		include includes/join.jade
+		include includes/footer.jade
+
+
+
+		script(src="lib/modernizr/modernizr.js")
+		//- script.
+		//- 	var head = document.head, link = document.createElement('link')
+		//- 	link.rel = 'stylesheet'
+		//- 	link.href = 'css/style.css'
+		//- 	head.appendChild(link)
+		//- script.
+		//- 	var head = document.head, link = document.createElement('link')
+		//- 	link.rel = 'stylesheet'
+		//- 	link.href = 'lib/animate/animate.css'
+		//- 	head.appendChild(link)
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		script.
+			window.jQuery || document.write('<script src="lib/jquery/jquery-2.1.4.min.js"><\/script>');
+		script(src="lib/TweenMax/TweenMax.min.js")
+		script(src="lib/scrollmagic/ScrollMagic.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js")
+		script(src="lib/scrollmagic/debug.addIndicators.min.js")
+		script(src="js/common.js")

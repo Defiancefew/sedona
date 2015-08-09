@@ -1,0 +1,36 @@
+.wrapper
+	section.join
+		h2.join__heading ЗАИНТЕРЕСОВАЛИСЬ?
+		p.join__subtext Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне
+		.join__form
+				.join__form-header
+					h3.join__form-heading Поиск гостиницы в седоне
+				form
+					.division
+						label(for="#date_first") Дата заезда:
+						input#date_first(type="datetime" placeholder="24 Апреля 2014")
+					.division
+						label(for="#date_second") Дата Выезда:
+						input#date_second(type="datetime" placeholder="4 июля 2014")
+					.division
+						label(for="#adults") ВзрослыЕ:
+						input#adults(type="number" placeholder="2")
+					.division
+						label(for="#kids") ДетИ:
+						input#kids(type="number" placeholder="4")
+					button(type="submit") Найти
+		.footer
+			.footer__visit
+				h2.footer__link #visitSEDONA
+			.footer__social
+				.footer__icon
+					a(href="#")
+						i.footer__icon-twitter
+				.footer__icon
+					a(href="#")
+						i.footer__icon-facebook
+				.footer__icon
+					a(href="#")
+						i.footer__icon-youtube
+			.footer__design
+				| Website by <i class="footer__logo_a"></i> for <i class="footer__logo_html"></i>
